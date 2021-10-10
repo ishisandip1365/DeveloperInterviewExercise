@@ -26,17 +26,17 @@ namespace FileData
                 {
                     if (versionKeyWords != null && !string.IsNullOrWhiteSpace(versionKeyWords))
                     {
-                        if (versionKeyWords.Split(',').Any(a => a == args[0]))
+                        if (versionKeyWords.Split(',').Any(a => a ==parameters[0]))
                         {
-                            Console.WriteLine("File Version is : " + fileDetails.Version(args[1]));
+                            Console.WriteLine("File Version is : " + fileDetails.Version(parameters[1]));
                         }
                     }
 
                     if (sizeKeyWords != null && !string.IsNullOrWhiteSpace(sizeKeyWords))
                     {
-                        if (sizeKeyWords.Split(',').Any(a => a == args[0]))
+                        if (sizeKeyWords.Split(',').Any(a => a == parameters[0]))
                         {
-                            Console.WriteLine("File Size is : " + fileDetails.Size(args[1]));
+                            Console.WriteLine("File Size is : " + fileDetails.Size(parameters[1]));
                         }
                     }
                 }
